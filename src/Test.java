@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.Optional;
 import java.util.Scanner;
 
 /**
@@ -7,31 +7,15 @@ import java.util.Scanner;
 
 public class Test
 {
-    public static void main(String[] args)throws Exception
+    public static void main(String[] args) throws Exception
     {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        ArrayList<String> list = new ArrayList<>();
-        for(int i = 0; i < n; i++)
+        int t = sc.nextInt();
+        sc.nextLine();
+        while(t-- > 0)
         {
-            String str = sc.next();
-            list.add(str);
-        }
-        int q = sc.nextInt();
-        while(q-- > 0)
-        {
-            int l = sc.nextInt() - 1;
-            int r = sc.nextInt() - 1;
-            String s = sc.next();
-            int c = 0;
-            for(int i = l; i <= r; i++)
-            {
-                if(list.get(i).equals(s))
-                {
-                    c++;
-                }
-            }
-            System.out.println(c);
+            Optional<Test> testOptional = new Optional<>();
+            System.out.println(Math.pow(-1, 1));
         }
     }
 }
